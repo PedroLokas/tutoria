@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Tutoria - Pedro Lucas | Conteúdo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header com navegação -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>Tutoria - Pedro Lucas</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Disciplinas</a></li>
+                    <li><a href="atividades.html" class="nav-link">Atividades</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" id="breadcrumb">
+                <a href="index.html">Disciplinas</a>
+                <span class="breadcrumb-separator">›</span>
+                <span id="breadcrumbDiscipline">Carregando...</span>
+                <span class="breadcrumb-separator">›</span>
+                <span id="breadcrumbContent">Carregando...</span>
+            </nav>
+
+            <!-- Loading indicator -->
+            <div class="loading" id="loading">
+                <div class="loading-spinner"></div>
+                <p>Carregando conteúdo...</p>
+            </div>
+
+            <!-- Container do conteúdo -->
+            <article class="content-detail" id="contentDetail" style="display: none;">
+                <!-- Cabeçalho do conteúdo -->
+                <header class="content-header">
+                    <div class="content-meta">
+                        <span class="content-discipline" id="contentDiscipline"></span>
+                    </div>
+                    <h1 class="content-title" id="contentTitle"></h1>
+                    <p class="content-description" id="contentDescription"></p>
+                </header>
+
+                <!-- Conteúdo principal -->
+                <section class="content-body">
+                    <div class="content-text" id="contentText">
+                        <!-- Texto explicativo será carregado aqui -->
+                    </div>
+                    
+                    <!-- Links e recursos -->
+                    <div class="content-resources" id="contentResources">
+                        <!-- Links para arquivos serão carregados aqui -->
+                    </div>
+                </section>
+
+                <!-- Navegação entre conteúdos -->
+                <nav class="content-navigation" id="contentNavigation">
+                    <!-- Botões de navegação serão adicionados aqui -->
+                </nav>
+            </article>
+
+            <!-- Mensagem de erro -->
+            <div class="error-message" id="errorMessage" style="display: none;">
+                <h2>Conteúdo não encontrado</h2>
+                <p>O conteúdo solicitado não foi encontrado ou não pôde ser carregado.</p>
+                <a href="index.html" class="back-link">← Voltar às Disciplinas</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pedro Lucas - Tutoria Educacional</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
